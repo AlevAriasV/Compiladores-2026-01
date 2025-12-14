@@ -1,0 +1,10 @@
+# Definición de entradas 
+input A 128,64
+input B 64,128
+input C 128,128
+
+# Operaciones
+# formato: variable_destino = operacion op1 op2
+t1 = matmul A B
+t2 = add t1 C
+resultado = relu t2
